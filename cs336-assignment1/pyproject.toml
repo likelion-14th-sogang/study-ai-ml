@@ -48,3 +48,11 @@ line-length = 120
 [tool.ruff.lint]
 extend-select = ["UP"]
 ignore = ["F722"]
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cu126" }]
+
+[[tool.uv.index]]
+name = "pytorch-cu126"
+url = "https://download.pytorch.org/whl/cu126"
+explicit = true
